@@ -4,6 +4,6 @@ export default class ItemRoute extends Route {
   model(params) {
     const { item_id } = params;
 
-    return item_id;
+    return { item_id };
   }
 }
