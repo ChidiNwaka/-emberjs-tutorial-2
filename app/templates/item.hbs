@@ -1,8 +1,8 @@
 <GeneralContainer>
     <LinkTo @route="index">Home</LinkTo>
     <div class="product item-details-page">
-        <Product::Image />
-        <Product::Details />
+        <Product::Image @src={{this.sourceImage}} />
+        <Product::Details @color={{this.color}} @onChangeColor={{this.onChangeColor}} />
     </div>
     <h5 class="mt-5">Features</h5>
     <ul>
